@@ -36,22 +36,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    var galleryItems = document.querySelectorAll('.gallery-item');
-    galleryItems.forEach(function (item) {
-        item.addEventListener('click', function () {
-            var title = item.querySelector('.gallery-overlay span');
-            if (title) {
-                var text = title.textContent;
-                var msg = document.createElement('div');
-                msg.textContent = '\uD83D\uDCF7 ' + text;
-                msg.style.cssText =
-                    'position:fixed;bottom:30px;left:50%;transform:translateX(-50%);' +
-                    'background:#242424;color:#f0b429;padding:14px 28px;border-radius:50px;' +
-                    'font-weight:600;z-index:300;box-shadow:0 8px 30px rgba(0,0,0,0.5);' +
-                    'border:1px solid rgba(240,180,41,0.2);animation:fadeIn 0.3s ease;';
-                document.body.appendChild(msg);
-                setTimeout(function () { msg.remove(); }, 2000);
+    // Scroll reveal animation
+    var revealElements = document.querySelectorAll('.card, .section-title, .section-desc');
+    revealElements.forEach(function (el) { el.classList.add('reveal'); });
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
             }
         });
-    });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(function (el) { observer.observe(el); });
 });

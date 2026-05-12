@@ -8,7 +8,7 @@ places = [
         "title": "Петергоф",
         "region": "Санкт-Петербург",
         "description": "Столица фонтанов и парков. Петергоф — одна из главных жемчужин Северо-Запада. Большой каскад, дворцы и аллеи Нижнего парка поражают величием. Летом здесь проходят водные шоу и праздники.",
-        "image": "https://images.unsplash.com/photo-1599751449128-eb724d4c81b0?w=600&q=80",
+        "image": "https://loremflickr.com/600/400/peterhof",
         "url": "https://peterhofmuseum.ru"
     },
     {
@@ -16,7 +16,7 @@ places = [
         "title": "Кижи",
         "region": "Республика Карелия",
         "description": "Музей-заповедник под открытым небом на острове Кижи. Знаменитая 22-главая Преображенская церковь, построенная без единого гвоздя — шедевр русского деревянного зодчества.",
-        "image": "https://images.unsplash.com/photo-1580822184713-fc1d25b4d6e6?w=600&q=80",
+        "image": "https://loremflickr.com/600/400/kizhi",
         "url": "https://kizhi.karelia.ru"
     },
     {
@@ -24,7 +24,7 @@ places = [
         "title": "Валаам",
         "region": "Республика Карелия",
         "description": "Древний монастырь на скалистом острове Ладожского озера. Валаамский архипелаг славится суровой северной природой, гранитными берегами и вековыми храмами.",
-        "image": "https://images.unsplash.com/photo-1597346901362-5f0a168a8c3b?w=600&q=80",
+        "image": "https://loremflickr.com/600/400/valaam",
         "url": "https://valaam.ru"
     },
     {
@@ -32,7 +32,7 @@ places = [
         "title": "Соловецкие острова",
         "region": "Архангельская область",
         "description": "Уникальный архипелаг в Белом море. Соловецкий монастырь — крепость веры и истории. Лабиринты, каналы и суровая природа создают атмосферу настоящего приключения.",
-        "image": "https://images.unsplash.com/photo-1598887142488-5e9f46b8ff2b?w=600&q=80",
+        "image": "https://loremflickr.com/600/400/solovki",
         "url": "https://solovky.ru"
     },
     {
@@ -40,7 +40,7 @@ places = [
         "title": "Псковский кремль",
         "region": "Псковская область",
         "description": "Сердце древнего Пскова. Кром — так называют кремль местные — одна из крупнейших крепостей Европы. Довмонтов город, Троицкий собор и панорама реки Великой.",
-        "image": "https://images.unsplash.com/photo-1589237672146-0b0e2b0b2b2b?w=600&q=80",
+        "image": "https://loremflickr.com/600/400/pskov,kremlin",
         "url": "https://museumpskov.ru"
     },
     {
@@ -48,7 +48,7 @@ places = [
         "title": "Великий Новгород",
         "region": "Новгородская область",
         "description": "Родина российской государственности. Новгородский кремль, Софийский собор, Ярославово дворище — каждый камень здесь дышит историей. Обязательно посетите музей деревянного зодчества «Витославлицы».",
-        "image": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600&q=80",
+        "image": "https://loremflickr.com/600/400/novgorod",
         "url": "https://novgorodmuseum.ru"
     },
     {
@@ -56,7 +56,7 @@ places = [
         "title": "Куршская коса",
         "region": "Калининградская область",
         "description": "Национальный парк, внесённый в список ЮНЕСКО. Узкая полоса песка между Балтийским морем и Куршским заливом. Танцующий лес, высота Эфа и белые дюны.",
-        "image": "https://images.unsplash.com/photo-1578151359971-5cb2b0e39a6f?w=600&q=80",
+        "image": "https://loremflickr.com/600/400/curonian,spit",
         "url": "https://park-kosa.ru"
     },
     {
@@ -64,7 +64,7 @@ places = [
         "title": "Хибины",
         "region": "Мурманская область",
         "description": "Горный массив за Полярным кругом. Рай для любителей треккинга и горных лыж. Полярная ночь, северное сияние, прозрачные озёра и тундра — настоящая Арктика.",
-        "image": "https://images.unsplash.com/photo-1516900448138-898c27b5c2e1?w=600&q=80",
+        "image": "https://loremflickr.com/600/400/khibiny",
         "url": "https://hibiny.org"
     },
     {
@@ -72,7 +72,7 @@ places = [
         "title": "Вологда",
         "region": "Вологодская область",
         "description": "Город с тысячелетней историей. Вологодский кремль, Софийский собор, кружево и масло. Деревянное зодчество Заречья и уютные улочки старого купеческого города.",
-        "image": "https://images.unsplash.com/photo-1566041510394-cf7c8fe21808?w=600&q=80",
+        "image": "https://loremflickr.com/600/400/vologda",
         "url": "https://vologdamuseum.ru"
     },
     {
@@ -80,24 +80,14 @@ places = [
         "title": "Кирилло-Белозерский монастырь",
         "region": "Вологодская область",
         "description": "Крупнейший монастырь Европы! Огромная крепость на берегу Сиверского озера. Фрески, древние иконы и музейные коллекции расскажут историю русского Севера.",
-        "image": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600&q=80",
+        "image": "https://loremflickr.com/600/400/kirillov",
         "url": "https://kirmuseum.org"
     }
 ]
 
-gallery = [
-    {"title": "Петергоф. Большой каскад", "image": "https://images.unsplash.com/photo-1599751449128-eb724d4c81b0?w=800&q=80"},
-    {"title": "Кижи. Преображенская церковь", "image": "https://images.unsplash.com/photo-1580822184713-fc1d25b4d6e6?w=800&q=80"},
-    {"title": "Валаам. Монастырский двор", "image": "https://images.unsplash.com/photo-1597346901362-5f0a168a8c3b?w=800&q=80"},
-    {"title": "Соловки. Бухта Благополучия", "image": "https://images.unsplash.com/photo-1598887142488-5e9f46b8ff2b?w=800&q=80"},
-    {"title": "Куршская коса. Танцующий лес", "image": "https://images.unsplash.com/photo-1578151359971-5cb2b0e39a6f?w=800&q=80"},
-    {"title": "Хибины. Северное сияние", "image": "https://images.unsplash.com/photo-1516900448138-898c27b5c2e1?w=800&q=80"}
-]
-
-
 @app.route("/")
 def index():
-    return render_template("index.html", places=places, gallery=gallery)
+    return render_template("index.html", places=places)
 
 
 if __name__ == "__main__":
