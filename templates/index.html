@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Северо-Запад России — путеводитель</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">&#127759; СЗФО</a>
+            <nav class="nav">
+                <a href="#places">Маршруты</a>
+                <a href="#gallery">Галерея</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Северо-Западный<br>Федеральный округ</h1>
+            <p class="hero-sub">Дайджест для путешественников &mdash; 10 мест, которые нужно увидеть</p>
+            <a href="#places" class="btn-primary">Смотреть маршруты</a>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <section id="places" class="cards-section">
+        <div class="container">
+            <h2 class="section-title">&#128205; Туристические объекты</h2>
+            <p class="section-desc">Откройте для себя уникальные места Северо-Запада России</p>
+            <div class="cards-grid">
+                {% for place in places %}
+                <article class="card" data-id="{{ place.id }}">
+                    <div class="card-img" style="background-image: url('{{ place.image }}');"></div>
+                    <div class="card-body">
+                        <span class="card-region">{{ place.region }}</span>
+                        <h3 class="card-title">{{ place.title }}</h3>
+                        <p class="card-text">{{ place.description }}</p>
+                        <button class="card-btn" data-url="{{ place.url }}">Открыть материал</button>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">&#128247; Фотогалерея</h2>
+            <p class="section-desc">Вдохновляйтесь красотой Северо-Запада</p>
+            <div class="gallery-grid">
+                {% for item in gallery %}
+                <div class="gallery-item" style="background-image: url('{{ item.image }}');">
+                    <div class="gallery-overlay">
+                        <span>{{ item.title }}</span>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Северо-Западный дайджест. Сделано с любовью к путешествиям.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <p>Вы уверены, что хотите перейти на сайт?</p>
+            <div class="modal-actions">
+                <button class="btn-secondary" id="modalCancel">Отмена</button>
+                <a href="#" class="btn-primary" id="modalConfirm" target="_blank">Перейти</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
